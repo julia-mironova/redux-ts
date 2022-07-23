@@ -3,7 +3,7 @@ import { Dispatch } from "react";
 import { ActionType } from "../action-types/index";
 import { Action } from "../actions/index";
 
-const searchRepos = (term: string) => {
+export const searchRepos = (term: string) => {
 	return async (dispatch: Dispatch<Action>) => {
 		dispatch({
 			type: ActionType.SEARCH_REPOS,
